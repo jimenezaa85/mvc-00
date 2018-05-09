@@ -21,18 +21,18 @@ namespace mvc_00.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(Customer customer)
         {
-            //CustomerValidator validator = new CustomerValidator();
-            //ValidationResult results = validator.Validate(customer);
+            CustomerValidator validator = new CustomerValidator();
+            ValidationResult results = validator.Validate(customer);
 
-            //if(!results.IsValid)
-            //{
-            //    return View(customer);
-            //}
-
-            if(!ModelState.IsValid)
+            if (!results.IsValid)
             {
                 return View(customer);
             }
+
+            //if(!ModelState.IsValid)
+            //{
+            //    return View(customer);
+            //}
 
             return RedirectToAction(nameof(Index));
         }

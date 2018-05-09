@@ -95,3 +95,7 @@ D:\DEV\Dev-mvc\mvc-00\mvc-00\obj\Debug\mvc-00.dll
 D:\DEV\Dev-mvc\mvc-00\mvc-00\obj\Debug\mvc-00.pdb
 D:\DEV\Dev-mvc\mvc-00\mvc-00\bin\FluentValidation.Mvc.dll
 D:\DEV\Dev-mvc\mvc-00\mvc-00\bin\FluentValidation.Mvc.xml
+D:\DEV\Dev-mvc\mvc-00\mvc-00\bin\EntityFramework.dll
+D:\DEV\Dev-mvc\mvc-00\mvc-00\bin\EntityFramework.SqlServer.dll
+D:\DEV\Dev-mvc\mvc-00\mvc-00\bin\EntityFramework.xml
+D:\DEV\Dev-mvc\mvc-00\mvc-00\bin\EntityFramework.SqlServer.xml
