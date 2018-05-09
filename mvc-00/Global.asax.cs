@@ -20,7 +20,11 @@ namespace mvc_00
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            FluentValidationModelValidatorProvider.Configure();
+            FluentValidationModelValidatorProvider.Configure(options => {
+                ValidatorOptions.CascadeMode = CascadeMode.Continue;
+                
+             
+            });
         }
     }
 }

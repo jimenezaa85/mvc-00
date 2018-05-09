@@ -21,6 +21,8 @@ namespace mvc_00.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(Customer customer)
         {
+            var pet1 = new Pet() { Name = "Toro" };
+            customer.Pets.Add(pet1);
             CustomerValidator validator = new CustomerValidator();
             ValidationResult results = validator.Validate(customer);
 

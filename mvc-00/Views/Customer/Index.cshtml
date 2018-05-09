@@ -1,7 +1,7 @@
 ﻿@model mvc_00.Models.Customer
 
 
-@using (Html.BeginForm("Index", "Customer", FormMethod.Post))
+@using (Html.BeginForm("Index", "Customer", FormMethod.Post, new { @id = "frmEdit", enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
 
